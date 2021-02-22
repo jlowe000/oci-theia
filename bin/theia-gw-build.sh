@@ -1,3 +1,5 @@
+docker ps -a
+docker rm theia-gw
 docker images
 docker rmi theia-gw
 BUILD_OPTIONS=""
