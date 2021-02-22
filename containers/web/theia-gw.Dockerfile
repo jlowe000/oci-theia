@@ -1,9 +1,9 @@
 FROM nginx:alpine
 
-COPY nginx-selfsigned.crt nginx-selfsigned.key /root/
+COPY infra/compute/theia-gw.crt infra/compute/theia-gw.key /root/
 
-COPY default.conf /etc/nginx/conf.d
-COPY auth.htpasswd /etc/nginx
+COPY containers/web/default.conf /etc/nginx/conf.d
+COPY infra/compute/auth.htpasswd /etc/nginx
 
 EXPOSE 8080
 EXPOSE 8081
