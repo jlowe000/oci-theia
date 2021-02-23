@@ -22,3 +22,7 @@ We extended this to be running and deployable on OCI.
   - theia-python docker image was chosen for this build
   - a docker network has been setup internally
   - exposing 8080 (http) / 8081 (https) from nginx which forwards to theia
+
+## oci-theia-tf - https://github.com/jlowe000/oci-theia-tf
+
+- This sibling project helps with standing up theia on Oracle Cloud Infrastructure (using Oracle Resource Manager).
